@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&family=Protest+Strike&family=Spicy+Rice&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav start */
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    top: 0px;
+    z-index: 800;
+}
+nav .logo{
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid white; */
+    margin-left: 40px;
+    float: left;
+}
+nav .logo h1{
+    /* font-size: 2rem; */
+    line-height: 70px;
+    font-family: cursive;
+    font-style: italic;
+    color: #fff;
+}
+nav .link{
+    height: 100%;
+    width: 35%;
+    /* border: 2px solid white; */
+    margin-right: 40px;
+    float: right;
+}
+nav .link a{
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+}
+/* header start */
+header{
+    width: 100%;
+    height: 700px;
+    /* border: 2px solid red; */
+    background-image: url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    position: relative;
+}
+header .heading{
+    height: 100px;
+    width: 350px;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 550px;
+    left: 200px;
+}
+header .heading h1{
+    font-size: 2.5rem;
+    font-family: "Protest Strike", system-ui;
+    color: #fff;
+}
+header .heading span{
+    color: #DC143B;
+}
+header button{
+    padding:20px 40px;
+    position: absolute;
+    right: 225px;
+    bottom: 60px;
+    border-radius: 20px;
+    background-color: #DC143B;
+    border: none;
+    color: white;
+    font-family: cursive;
+}
+/* main */
+/* .author start */
+.author{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-image: linear-gradient(to bottom right, #B56F63,#382224,#382224,#6D3F26,#95771F,#95771F);
+}
+.auther_left{
+    height: 100%;
+    width: 45%;
+    /* border: 2px solid red; */
+    float: left;
+}
+.auther_left h2{
+    font-size: 2rem;
+    color: white;
+    padding-left: 60px;
+    padding-top: 200px;
+    font-family: "Spicy Rice", serif;
+    line-height: 60px;
+}
+.auther_right{
+    height: 100%;
+    width: 55%;
+    /* border: 2px solid red; */
+    float: left;
+    position: relative;
+}
+.auther_right p{
+    padding-top: 180px;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+    font-family: "Lobster", system-ui;
+}
+.auther_right span{
+    position: absolute;
+    right:60px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Lobster", system-ui;
+}
+/* 3rd slide */
+.know_more{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: #776A36;
+}
+.image{
+    height: 100%;
+    width: 45%;
+    /* border: 2px solid red; */
+    float: left;
+}
+.image img{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 90%;
+    width: 75%;
+    border-radius: 25px ;
+}
+.content{
+    height: 100%;
+    width: 55%;
+    /* border: 2px solid red; */
+    float: left;
+    position: relative;
+}
+.content p{
+    padding-top: 70px;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: justify;
+    /* padding-left: 30px; */
+    padding-right: 30px;
+    color: #fff;
+    font-family: "Lobster", system-ui;
+}
+.content button{
+    margin-top: 20px;
+    margin-left: 225px;
+    padding: 25px 60px;
+    border: 5px double white;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: cursive;
+    font-style: italic;
+    color: #fff;
+}
+/* 4th slide */
+.know_mores{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: #734E33;
+}
+.content{
+    height: 100%;
+    width: 55%;
+    /* border: 2px solid red; */
+    float: left;
+    position: relative;
+}
+.content p{
+    padding-top: 70px;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 30px;
+    color: #fff;
+    font-family: "Lobster", system-ui;
+}
+.content button{
+    margin-top: 20px;
+    margin-left: 225px;
+    padding: 25px 60px;
+    border: 5px double white;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: cursive;
+    font-style: italic;
+    color: #fff;
+}
+.image{
+    height: 100%;
+    width: 45%;
+    /* border: 2px solid red; */
+    float: left;
+}
+.image img{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 90%;
+    width: 75%;
+    border-radius: 25px ;
+}
+/* 5th slide */
+.schedule{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+}
+.schedule .schedule_visit{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid greenyellow; */
+    position: relative;
+    float: left;
+}
+.schedule .schedule_visit h3{
+    font-size: 2.5rem;
+    position: absolute;
+    font-family: "Pacifico", cursive;
+    font-weight: 900;
+    top: 150px;
+    left: 50px;
+}
+.schedule .schedule_visit p{
+    font-size: 1.5rem;
+    line-height: 40px;
+    padding-right:50px ;
+    position: absolute;
+    top: 225px;
+    left: 50px;
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+}
+.schedule .schedule_form{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid greenyellow; */
+    float: left;
+    position: relative;
+}
+.schedule .schedule_form .forms{
+    height: 60%;
+    width: 100%;
+    /* border: 2px solid hotpink; */
+    position: absolute;
+    top: 150px;
+}
+.schedule .schedule_form form input{
+    height: 50px;
+    width:275px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px 2px gray;
+    font-family: "Satisfy", cursive;
+    border: none;
+}
+#add{
+    height: 80px;
+    width:500px;
+    padding-top: 0;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+.schedule .schedule_form button{
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+    font-family: "Satisfy", cursive;
+}
+.schedule .schedule_form button:hover{
+    background-color:midnightblue;
+    color: #fff;
+    
+}
+/* 6th slide */
+.join_us{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+}
+.join_us .imag_join{
+    height: 55%;
+    width: 100%;
+    /* border: 2px solid greenyellow;   */
+    background-image: url(https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+.join_us .imag_join .img_opacity{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+.join_us .imag_join .img_opacity .cont{
+    margin-left: 50px;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid greenyellow; */
+    position: relative;
+}
+.join_us .imag_join .img_opacity .cont h1{
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 50px;
+    color: white;
+    font-family: "Rowdies", sans-serif;
+    
+}
+.join_us .imag_join .img_opacity .cont h1 span{
+    color: #DC143B;
+}
+.join_us .imag_join .img_opacity .cont button{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 40px;
+    border-color: #DC143B;
+    font-family: "Satisfy", cursive;
+    position: absolute;
+    bottom: 40px;
+    left: 250px;
+}
+.join_us .content_join{
+    height: 46%;
+    width: 100%;
+    background-color: #171717;
+    /* border: 2px solid greenyellow; */
+}
+.join_us .content_join .contact_us{
+    height: 100%;
+    width: 30%;
+    margin-left: 150px;
+    /* border: 2px solid greenyellow; */
+    float: left;
+    position: relative;
+}
+.join_us .content_join .contact_us h1{
+    color: #fff;
+    font-family: "Lilita One", sans-serif;
+    font-size: 1.5rem;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+.join_us .content_join .contact_us address{
+    color: #fff;
+    line-height: 40px;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.join_us .content_join .contact_us address i{
+    color: #DC143B;
+}
+.join_us .content_join .contact_with_us{
+    height: 100%;
+    width: 30%;
+    margin-right: 150px;
+    /* border: 2px solid greenyellow; */
+    float: right;
+    position: relative;
+}
+.join_us .content_join .contact_with_us h1{
+    color: #fff;
+    font-family: "Lilita One", sans-serif;
+    font-size: 1.5rem;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+.join_us .content_join .contact_with_us .links{
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+.join_us .content_join .contact_with_us .links a{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #DC143B;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+.join_us .content_join .contact_with_us .links a:hover{
+    background-color: #fff;
+    color: #DC143B;
+}
+/* footer */
+footer{
+    height: 60px;
+    background-color: #001F3F;
+}
+footer .copyright{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid #fff; */
+    margin-left: 200px;
+    float: left;
+}
+footer .copyright p{
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700;
+    
+}
+footer .to_but{
+    height: 100%;
+    width: 5%;
+    /* border: 2px solid #fff; */
+    margin-right: 150px;
+    float: right;
+}
+footer .to_but button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 2.8rem;
+}
+footer .to_but button a{
+    text-decoration: none;
+    color:#DC143B;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Pacifico&family=Rowdies:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="top">
+       <div class="logo">
+        <h1>TECHFIT CLUB</h1>
+       </div>
+       <div class="link">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">SCHEDULE</a>
+        <a href="#">CONTACT</a>
+       </div>
+    </nav>   
+    <header>
+        <div class="heading"><h1><span>"</span>Turning dreams into<span> Reality"</span></h1></div>
+        <button>Because a Member</button>
+    </header>
+    <main>
+        <!-- 2nd slide -->
+        <div class="author">
+            <div class="auther_left">
+                <h2>We're Passionate About Fitness, dedicated to growth, and always striving for success!</h2>
+            </div>
+            <div class="auther_right">
+                <p>"Our gym is a vibrant and energizing place where we foster not just fitness but also friendship and motivation. Every member here shares a common goal - to improve their health and fitness. We provide a supportive and encouraging environment where everyone can succeed in their fitness journey. Come join us in building a healthier and stronger lifestyle together!"
+                </p>
+                <span>-Author</span>
+            </div>
+        </div>
+        <!-- 3rd slide -->
+        <div class="know_more">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/13756380/pexels-photo-13756380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img_gym">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sequi adipisci reprehenderit aliquid eveniet est velit error ex voluptates, ducimus provident illo ipsum, facilis pariatur, vel earum maxime voluptatibus? Nemo perferendis quis iusto exercitationem voluptatibus quo enim fugiat nulla voluptas quam, doloremque corporis debitis unde iure eligendi minima soluta qui ratione aliquam est nam aspernatur id sunt rem? Odit nihil expedita exercitationem nulla, dolorum qui pariatur iste officiis quisquam modi sed temporibus nesciunt recusandae eveniet ullam cumque eligendi aut? Incidunt.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+        <!-- 4th slide -->
+        <div class="know_mores">
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sequi adipisci reprehenderit aliquid eveniet est velit error ex voluptates, ducimus provident illo ipsum, facilis pariatur, vel earum maxime voluptatibus? Nemo perferendis quis iusto exercitationem voluptatibus quo enim fugiat nulla voluptas quam, doloremque corporis debitis unde iure eligendi minima soluta qui ratione aliquam est nam aspernatur id sunt rem? Odit nihil expedita exercitationem nulla, dolorum qui pariatur iste officiis quisquam modi sed temporibus nesciunt recusandae eveniet ullam cumque eligendi aut? Incidunt.</p>
+                <button>Know More</button>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/4662348/pexels-photo-4662348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+        </div>
+        <!-- 5th slide -->
+         <div class="schedule">
+            <div class="schedule_visit">
+                <h3><u>Schedule a visit</u></h3>
+                <p>If you would like to schedule a visit to our gym facility, please fill out the form below. We will contact you to arrange a convenient time for your visit and provide you with a tour of our gym....
+                    </p>
+            </div>
+            <div class="schedule_form">
+                <div class="forms">
+                    <form action="">
+                    <input type="text" name="f_name" id="f_name" placeholder="Enter Your First name">
+
+                    <input type="text" name="l_name" id="l_name" placeholder="Enter Your Last name">
+
+                    <input type="email" name="mail" id="mail" placeholder="Enter your someone@gmail.com">
+
+                    <input type="password" name="pass" id="pass" placeholder="Enter your password">
+
+                    <input  id="add" type="text" name="address" id="address" placeholder="Enter your Address">
+                    </form>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+         </div>
+         <!-- 6th slide -->
+          <div class="join_us">
+            <div class="imag_join">
+               <div class="img_opacity">
+                    <div class="cont">
+                        <h1><span>"</span>Try, Work Hard, Stay Consistent, and make the gym your happy place where the magic of fitness happens!<span>"</span></h1>
+                        <button>Join us Now!</button>
+                    </div>
+               </div>
+            </div>
+            <div class="content_join">
+                <div class="contact_us">
+                    <h1>Contact Us!</h1>
+                    <address>
+                        <i class="ri-home-office-line"></i>khilwat ,bidupur, Vaishali, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bihar, India 844503<br><i class="ri-phone-fill"></i> +91 9942586565<br><i class="ri-mail-settings-line"></i> info@TechfitClub.com
+                    </address>
+                </div>
+                <div class="contact_with_us">
+                    <h1>Connect with us!</h1>
+                    <div class="links">
+                        <a href="https://www.facebook.com/login/"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="ri-instagram-line"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="copyright">
+            <p><i class="ri-copyright-line"></i> Copyright 2024, TechFitClub | All Right Reserved.</p>
+        </div>
+        <div class="to_but">
+            <button><a href="#"><i class="ri-arrow-up-double-line"></i></a></button>
+        </div>
+        <a href=""></a>
+    </footer>
+</body>
+</html>
